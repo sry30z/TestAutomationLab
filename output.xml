@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2025-12-27T18:36:48.058054" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab4 Test3" source="C:\ChromeForTesting\Lab4\Lab4_Test3.robot">
+<test id="s1-t1" name="Register Fail Empty First Name" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-27T18:36:48.318494" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/Lab4/Registration.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-27T18:36:48.317759" elapsed="1.706660"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-27T18:36:50.028265" elapsed="0.072443"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-27T18:36:50.103701" level="INFO">Typing text 'Sodsai' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>Sodsai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-27T18:36:50.102514" elapsed="0.239195"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-27T18:36:50.343158" level="INFO">Typing text 'CS KKU' into text field 'id=organization'.</msg>
+<arg>id=organization</arg>
+<arg>CS KKU</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-27T18:36:50.342640" elapsed="0.182651"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-27T18:36:50.526886" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>somyod@kkumail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-27T18:36:50.526246" elapsed="0.136108"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-27T18:36:50.663560" level="INFO">Typing text '091-001-1234' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>091-001-1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-27T18:36:50.663039" elapsed="0.120096"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-27T18:36:50.784478" level="INFO">Clicking button 'id=registerButton'.</msg>
+<arg>id=registerButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-27T18:36:50.783908" elapsed="0.112881"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>id=errors</arg>
+<arg>Please enter your first name!!</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2025-12-27T18:36:50.897665" elapsed="0.038565"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-27T18:36:50.937469" elapsed="2.360173"/>
+</kw>
+<status status="PASS" start="2025-12-27T18:36:48.316288" elapsed="4.982230"/>
+</test>
+<status status="PASS" start="2025-12-27T18:36:48.060680" elapsed="5.238974"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Lab4 Test3" id="s1" pass="1" fail="0" skip="0">Lab4 Test3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
